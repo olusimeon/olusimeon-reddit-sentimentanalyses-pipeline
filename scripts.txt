@@ -1,0 +1,8 @@
+# to build docker image 
+docker compose build
+
+# to start docker 
+docker compose up 
+
+# to stop docker 
+docker compose down

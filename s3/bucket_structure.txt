@@ -1,0 +1,21 @@
+# S3 Bucket Structure for Reddit Data Pipeline
+
+## Bucket Name: reddit-data-bucket
+
+### Raw Data Storage
+- **Prefix:** raw_data/
+- **Description:** Directory where raw data fetched from Reddit is stored.
+  - Example Path: s3://sentimentanalysespipeline/raw/filename.csv
+
+### Transformed Data Storage
+- **Prefix:** transformed_data/
+- **Description:** Directory where data, after being processed and transformed by AWS Glue, is stored.
+  - Example Path: s3://sentimentanalysespipeline/processed/transform_data.csv
+
+
+## Access Permissions
+- **Read Access:** Ensure that Airflow, AWS Glue, and any other services interacting with this bucket have appropriate read permissions.
+- **Write Access:** Ensure that Airflow, AWS Glue, and any other services interacting with this bucket have appropriate write permissions.
+- **Public Access:** This bucket should not be publicly accessible. Ensure that only authorized users and services have access.
+
+# End of S3 Bucket Structure

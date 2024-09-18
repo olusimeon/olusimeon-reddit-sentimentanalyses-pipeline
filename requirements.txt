@@ -1,0 +1,5 @@
+pandas
+numpy
+praw
+apache-airflow-providers-amazon
+boto3
